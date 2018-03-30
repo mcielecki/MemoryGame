@@ -1,0 +1,274 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('images/bg.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+}
+
+.cont {
+    height: 100vh;
+
+}
+
+.for-logo {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.paper {
+    display: block;
+    margin: 0 auto;
+    width: 800px;
+    height: 500px;
+    box-sizing: border-box;
+    background: url('images/paper.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+    overflow: hidden;
+    font-family: 'Satisfy', cursive;
+    font-size: 20px;
+    text-align: justify;
+    padding-top: 50px;
+    padding-right: 140px;
+    padding-left: 140px;
+
+}
+
+.paper2 {
+    display: block;
+    margin: 0 auto;
+    width: 1000px;
+    height: 500px;
+    box-sizing: border-box;
+    background: url('images/paper2.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+    overflow: hidden;
+    font-family: 'Satisfy', cursive;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 50px;
+    padding-right: 160px;
+    padding-left: 160px;
+}
+
+#flex-on {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.easy {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    animation: anim-e 5s infinite;
+
+}
+
+.medium {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    animation: anim-m 5s infinite;
+
+}
+
+.hard {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    animation: anim-h 5s infinite;
+
+}
+
+
+.world {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    animation: anim 3s infinite;
+}
+
+.easy:hover,
+.medium:hover,
+.hard:hover,
+.world:hover {
+    transform: scale(1.1, 1.1);
+
+}
+
+@keyframes anim {
+    0% {
+        color: #000000;
+    }
+    50% {
+        color: #FF0000;
+    }
+    100% {
+        color: #000000;
+    }
+}
+
+@keyframes anim-e {
+    0% {
+        color: #000000;
+    }
+    50% {
+        color: #003CFF;
+    }
+    100% {
+        color: #000000;
+    }
+}
+
+@keyframes anim-m {
+    0% {
+        color: #000000;
+    }
+    50% {
+        color: #FFB300;
+    }
+    100% {
+        color: #000000;
+    }
+}
+
+@keyframes anim-h {
+    0% {
+        color: #000000;
+    }
+    50% {
+        color: #AF0000;
+    }
+    100% {
+        color: #000000;
+    }
+}
+
+.txt {
+    padding: 0;
+    margin: 0;
+}
+
+.txt2 {
+    padding: 0;
+    margin-top: 10px;
+}
+
+.foot {
+    display: block;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    font-family: 'Satisfy', cursive;
+    font-size: 16px;
+}
+
+.counters {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 550px;
+}
+
+.level-name,
+#timer {
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Satisfy', cursive;
+    font-size: 20px;
+    color: #FFFF00;
+}
+
+.countdowntimer {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.game-board {
+    margin: 0px auto;
+    position: relative;
+    overflow: hidden;
+    width: 550px;
+    height: 444px;
+}
+
+.game-tile {
+    position: absolute;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #f6da17;
+    background: #5e5e55 url("images/title.png") center center no-repeat;
+}
+
+.game-tile:hover {
+    background-color: #5e5e55;
+    border: 2px solid #f6da17;
+}
+
+.game-score {
+    font-family: 'Satisfy', cursive;
+    font-size: 20px;
+    color: #FFFF00;
+    text-align: center;
+}
+
+.game-score::before {
+    content: 'Licznik prob '
+}
+
+.win-green,
+.fail-red {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+h3 {
+    text-align: center;
+}
+
+.again {
+    font-family: 'Satisfy', cursive;
+    font-size: 25px;
+    color: #FF0000;
+    text-align: center;
+    text-decoration: none;
+}
+
+.again:hover {
+    color: #FFFF00;
+}
+
+.again-win {
+    font-family: 'Satisfy', cursive;
+    font-size: 25px;
+    color: #FFFF00;
+    text-align: center;
+    text-decoration: none;
+}
+
+.again-win:hover {
+    color: #FF0000;
+}
